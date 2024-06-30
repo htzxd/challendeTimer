@@ -1,0 +1,24 @@
+#sounds {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+ 
+
+  img {
+    border: none;
+  }
+
+  .card {
+    height: 15.2rem;
+    width: 13.8rem;
+    border-radius: 2.4rem;
+    padding: 2.4rem;
+    background-color: rgb(74, 165, 165);
+    border: none;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    background-color: var(--button-color-hover);
+  }
+}

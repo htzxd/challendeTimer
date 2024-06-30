@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --button-color-hover: #02799D;
+  --bg-color: #20bba6;
+  --bg-card: #323238;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  column-gap: 19.2rem;
+}
