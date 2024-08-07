@@ -24,3 +24,11 @@ main {
   display: flex;
   column-gap: 19.2rem;
 }
+
+.running .ph-play-circle, .running .ph-timer,
+.musicON .ph-speaker-none,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle,
+html:not(.musicON) .ph-speaker-high{
+  display: none;
+}
