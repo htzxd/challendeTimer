@@ -15,7 +15,19 @@ export function countDown(){
 
   seconds--
 
-  
+  if(seconds < 0){
+    seconds = 59
+    minutes--
+  }
+
+  if(minutes < 0){
+    reset()
+    KitchenTimer.play()
+    return
+  }
+
+  updateDisplay(minutes, seconds)
+    state.countDownId = setTimeout(() => countDown(), 1000)
 }
 
 export function updateDisplay(minutes, seconds){
